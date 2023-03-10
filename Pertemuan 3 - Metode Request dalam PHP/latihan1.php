@@ -52,12 +52,7 @@ $game = [
     <ul>
         <?php foreach ($game as $goty) : ?>
             <li>
-                <a href="latihan2.php?judul=
-            <?= $goty["judul"]; ?>&relese= 
-            <?= $goty["relese"]; ?>&tahun= 
-            <?= $goty["tahun"]; ?>&gambar=
-            <?= $goty["gambar"]; ?> 
-            <?= $goty["judul"]; ?></a>
+                <a href="latihan2.php?judul<?= $goty["judul"]; ?>&release= <?= $goty["release"]; ?>&tahun= <?= $goty["tahun"]; ?>&gambar=<?= $goty["gambar"]; ?> "><?= $goty["judul"]; ?></a>
             </li>
         <?php endforeach; ?>
     </ul>
